@@ -24,13 +24,13 @@ export class Parent extends React.Component {
   render() {
     const value = this.state.value;
     return (
-      <>
+      <div className="container poc-container">
         <h2 id="poc1">PoC 1 - Data updates from child element</h2>
         <Child
           value={value}
           onChangeValue={(event) => this.handleChangeValue(event)} />
-        <button onClick={() => this.logValue()}>Log value</button>
-      </>
+        <button className="btn btn-primary"  onClick={() => this.logValue()}>Log value</button>
+      </div>
     );
   }
 }

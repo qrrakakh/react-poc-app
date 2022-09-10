@@ -1,6 +1,6 @@
 import { Parent as PoC1Parent } from "./PoC1/Parent";
 import { Parent as PoC2Parent } from "./PoC2/Parent";
-import './App.css'
+import './App.css';
 
 function App() {
   return (
