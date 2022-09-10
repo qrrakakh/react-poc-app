@@ -25,7 +25,7 @@ export class Parent extends React.Component {
     const value = this.state.value;
     return (
       <>
-        <h2>PoC 1 - Data updates from child element</h2>
+        <h2 id="poc1">PoC 1 - Data updates from child element</h2>
         <Child
           value={value}
           onChangeValue={(event) => this.handleChangeValue(event)} />
