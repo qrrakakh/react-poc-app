@@ -1,0 +1,16 @@
+.button {
+  border: apx solid #777;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.button-light {
+  background: #fff;
+  color: #222;
+}
+
+.button-dark {
+  background: #222;
+  color: #fff;
+}
