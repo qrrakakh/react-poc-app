@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import ChatAPI from './ChatAPIMock.js';
+import ChatAPI from './ChatAPIMock.jsx';
 import './styles/friend.status.css';
 
 function useFriendStatus(friendID) {

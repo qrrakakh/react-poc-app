@@ -1,6 +1,6 @@
 import React, { useState, createContext } from 'react';
 
-import { ContextChildButton} from './ContextChild.js';
+import { ContextChildButton} from './ContextChild.jsx';
 
 // import { UseExample } from './Use.js'
 

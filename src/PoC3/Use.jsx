@@ -1,6 +1,6 @@
 import { use } from 'react';
 
-import { ThemeContext } from './Context.js'
+import { ThemeContext } from './Context.jsx'
 
 export function UseExample({children}) {
 

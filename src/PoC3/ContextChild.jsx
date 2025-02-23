@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { ThemeContext } from './Context.js';
+import { ThemeContext } from './Context.jsx';
 
 import styles from './styles/button.module.css'
 
