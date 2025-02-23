@@ -1,9 +1,14 @@
 import React from 'react';
 import { Child } from './Child';
 
+type State = {
+  value: string;
+};
 
 export class Parent extends React.Component {
 
+  state: State;
+  
   constructor(props) {
     super(props);
     this.state = {

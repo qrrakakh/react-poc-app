@@ -1,6 +1,7 @@
-import { StateExample, ReducerExample, RefExample } from './State.jsx'
-import { EffectExample } from './Effect.jsx'
-import { ContextExample } from './Context.jsx'
+import React from 'react';
+import { StateExample, ReducerExample, RefExample}  from './State.tsx'
+import EffectExample from './Effect.tsx'
+import ContextExample from './Context.tsx'
 
 export function Parent(props) {
     return (

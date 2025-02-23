@@ -1,6 +1,12 @@
 import React from 'react';
 
+type State = {
+  value: string;
+};
+
 export class Parent extends React.Component {
+
+  state: State;
 
   constructor(props) {
     super(props);

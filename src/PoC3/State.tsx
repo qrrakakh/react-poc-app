@@ -1,6 +1,6 @@
 import React, { useState, useReducer, useRef } from 'react';
 
-function reducer(state, action) {
+const reducer = (state: reducer_state, action: reducer_action_type): reducer_state => {
   switch(action.type) {
     case 'increment':
       return {
@@ -11,12 +11,21 @@ function reducer(state, action) {
         age: state.age - 1
       }
     default:
-      console.log(`Unknwon action: `+action.type)  
+      console.log(`Invalid action: `+action);
+      return state;
   }
+};
+
+type reducer_state = {
+  age: number;
 }
+type reducer_action_type = 
+  | { type: 'increment' }
+  | { type: 'decrement' };
+const initialState:reducer_state = { age: 0 }
 
 export function ReducerExample(props) {
-  const [state, dispatch] = useReducer(reducer, { age: 0 })
+  const [state, dispatch] = useReducer(reducer , initialState)
 
   return (
     <>

@@ -5,12 +5,12 @@
   margin-left: 10px;
 }
 
-.button-light {
+.button_light {
   background: #fff;
   color: #222;
 }
 
-.button-dark {
+.button_dark {
   background: #222;
   color: #fff;
 }

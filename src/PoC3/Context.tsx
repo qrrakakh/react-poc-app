@@ -1,12 +1,12 @@
 import React, { useState, createContext } from 'react';
 
-import { ContextChildButton} from './ContextChild.jsx';
+import ContextChildButton from './ContextChild.tsx';
 
-// import { UseExample } from './Use.js'
+import { UseExample } from './Use.tsx'
 
-export const ThemeContext = createContext(null);
+export const ThemeContext = createContext<string>("");
 
-export function ContextExample(props) {
+const ContextExample = (props) => {
   const [theme, setTheme] = useState('light')
 
   return (
@@ -28,11 +28,13 @@ export function ContextExample(props) {
         <h4>use example</h4>
         <p>React version is {React.version}</p>
         {
-          // React.version.includes('canary') || React.version.includes('experimental')
-          //   ? <UseExample /> :
+          React.version.includes('canary') || React.version.includes('experimental')
+            ? <UseExample /> :
           "Available only in React Canary/Experimental as of Feb 12 2024."
         }
       </div>
       </ThemeContext.Provider>
   )
 }
+
+export default ContextExample
