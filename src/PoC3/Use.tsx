@@ -8,7 +8,7 @@ export function UseExample() {
 
   return (
     <div> 
-      {theme}
+      Current theme: {theme}
     </div>
   )
 }

@@ -26,11 +26,9 @@ const ContextExample = (props) => {
           <ContextChildButton>Click</ContextChildButton>
         </div>
         <h4>use example</h4>
-        <p>React version is {React.version}</p>
+        <p>React version is {React.version} <br />use API is available in stable channel in React 19. See <a href="https://react.dev/reference/react/use">the document</a>.</p>
         {
-          React.version.includes('canary') || React.version.includes('experimental')
-            ? <UseExample /> :
-          "Available only in React Canary/Experimental as of Feb 12 2024."
+          <UseExample />
         }
       </div>
       </ThemeContext.Provider>
