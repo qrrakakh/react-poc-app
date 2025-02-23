@@ -14,8 +14,8 @@
   "scripts": {
     "start": "vite",
     "dev": "react-router dev",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "react-router build",
+    "serve": "react-router preview"
   },
   "eslintConfig": {
     "extends": [
